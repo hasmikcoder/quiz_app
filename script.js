@@ -11,7 +11,10 @@ let currentQuestion=0;
 loadQuiz();
 
 function loadQuiz(){
+    const currentQuiz=quizData[currentquestion];
+    questionEl.innerHTML=quizData[currentQuestion]
 
+    
     currentQuestion++;
 
 };
