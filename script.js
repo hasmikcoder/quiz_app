@@ -78,3 +78,12 @@ function deselectAnswers() {
         answerEl.checked = false;
     });
 }
+
+submitBtn.addEventListener("click", () => {
+    // check to see the answer
+    const answer = getSelected();
+
+    if (answer) {
+        if (answer === quizData[currentQuiz].correct) {
+            score++;
+        }
