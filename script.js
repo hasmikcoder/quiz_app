@@ -72,3 +72,9 @@ function getSelected() {
 
     return answer;
 }
+
+function deselectAnswers() {
+    answerEls.forEach((answerEl) => {
+        answerEl.checked = false;
+    });
+}
