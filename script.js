@@ -61,3 +61,14 @@ function loadQuiz() {
 }
 
 
+function getSelected() {
+    let answer = undefined;
+
+    answerEls.forEach((answerEl) => {
+        if (answerEl.checked) {
+            answer = answerEl.id;
+        }
+    });
+
+    return answer;
+}
